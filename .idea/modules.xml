@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/C2.iml" filepath="$PROJECT_DIR$/.idea/C2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clase 1- Bienvenidos/Clase 1- Bienvenidos.iml" filepath="$PROJECT_DIR$/Clase 1- Bienvenidos/Clase 1- Bienvenidos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clase 2- Template Method/Clase 2- Template Method.iml" filepath="$PROJECT_DIR$/Clase 2- Template Method/Clase 2- Template Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clase 5- Patron Flyweight/Clase 5- Patron Flyweight.iml" filepath="$PROJECT_DIR$/Clase 5- Patron Flyweight/Clase 5- Patron Flyweight.iml" />
+    </modules>
+  </component>
+</project>
