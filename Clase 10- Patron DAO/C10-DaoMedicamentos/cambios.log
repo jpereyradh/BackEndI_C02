@@ -1,0 +1,5 @@
+[2024-05-13 23:58:53] [ INFO ] [BD:26] tabla creada con exito
+[2024-05-13 23:58:53] [ INFO ] [MedicamentoDAOH2:23] conexion establecida
+[2024-05-13 23:59:36] [ INFO ] [BD:26] tabla creada con exito
+[2024-05-13 23:59:37] [ INFO ] [MedicamentoDAOH2:23] conexion establecida
+[2024-05-13 23:59:37] [ WARN ] [MedicamentoDAOH2:33] medicamento guardado con exito
