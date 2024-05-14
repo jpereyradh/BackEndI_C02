@@ -1,0 +1,18 @@
+[2024-05-13 21:48:41] [ INFO ] [Cliente:20] conexion exitosa
+[2024-05-13 21:50:52] [ INFO ] [Cliente:20] conexion exitosa
+[2024-05-13 21:50:52] [ INFO ] [Cliente:31] saldo  100
+[2024-05-13 21:50:52] [ INFO ] [Cliente:37] saldo actualizado en 110
+[2024-05-13 21:55:08] [ INFO ] [Cliente:20] conexion exitosa
+[2024-05-13 21:55:08] [ INFO ] [Cliente:31] saldo  100
+[2024-05-13 21:55:08] [ INFO ] [Cliente:37] saldo actualizado en 110
+[2024-05-13 21:55:08] [ WARN ] [Cliente:45] Se cargo erroneamente el saldo actual
+[2024-05-13 21:57:44] [ INFO ] [Cliente:20] conexion exitosa
+[2024-05-13 21:57:44] [ INFO ] [Cliente:31] saldo  100
+[2024-05-13 21:57:44] [ INFO ] [Cliente:37] saldo actualizado en 110
+[2024-05-13 21:59:47] [ INFO ] [Cliente:20] conexion exitosa
+[2024-05-13 21:59:47] [ INFO ] [Cliente:31] saldo  100
+[2024-05-13 21:59:47] [ INFO ] [Cliente:37] saldo actualizado en 110
+[2024-05-13 22:01:40] [ INFO ] [Cliente:20] conexion exitosa
+[2024-05-13 22:01:40] [ INFO ] [Cliente:31] saldo  100
+[2024-05-13 22:01:40] [ INFO ] [Cliente:37] saldo actualizado en 110
+[2024-05-13 22:01:40] [ WARN ] [Cliente:46] Se cargo erroneamente el saldo actual
