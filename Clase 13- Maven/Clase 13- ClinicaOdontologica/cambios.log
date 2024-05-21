@@ -1,0 +1,22 @@
+[2024-05-20 23:21:43] [ WARN ] [BD:33] org.h2.Driver
+[2024-05-20 23:21:43] [ INFO ] [PacienteDAOH2:27] inicando la operacion de guardado
+[2024-05-20 23:21:43] [ WARN ] [PacienteDAOH2:48] org.h2.Driver
+[2024-05-20 23:22:41] [ INFO ] [BD:30] tabla creada con exito
+[2024-05-20 23:22:41] [ INFO ] [PacienteDAOH2:27] inicando la operacion de guardado
+[2024-05-20 23:22:41] [ INFO ] [PacienteDAOH2:44] paciente guardado con exito
+[2024-05-20 23:23:37] [ INFO ] [BD:30] tabla creada con exito
+[2024-05-20 23:23:37] [ INFO ] [PacienteDAOH2:27] inicando la operacion de guardado
+[2024-05-20 23:23:37] [ INFO ] [PacienteDAOH2:44] paciente guardado con exito
+[2024-05-20 23:23:37] [ INFO ] [PacienteDAOH2:55] iniciando la busqueda de un paciente por id: 3
+[2024-05-20 23:24:07] [ INFO ] [BD:30] tabla creada con exito
+[2024-05-20 23:24:07] [ INFO ] [PacienteDAOH2:27] inicando la operacion de guardado
+[2024-05-20 23:24:07] [ INFO ] [PacienteDAOH2:44] paciente guardado con exito
+[2024-05-20 23:24:07] [ INFO ] [PacienteDAOH2:55] iniciando la busqueda de un paciente por id: 3
+[2024-05-20 23:24:33] [ INFO ] [BD:30] tabla creada con exito
+[2024-05-20 23:24:33] [ INFO ] [PacienteDAOH2:27] inicando la operacion de guardado
+[2024-05-20 23:24:33] [ INFO ] [PacienteDAOH2:44] paciente guardado con exito
+[2024-05-20 23:24:33] [ INFO ] [PacienteDAOH2:55] iniciando la busqueda de un paciente por id: 3
+[2024-05-20 23:25:01] [ INFO ] [BD:30] tabla creada con exito
+[2024-05-20 23:25:01] [ INFO ] [PacienteDAOH2:27] inicando la operacion de guardado
+[2024-05-20 23:25:01] [ INFO ] [PacienteDAOH2:44] paciente guardado con exito
+[2024-05-20 23:25:01] [ INFO ] [PacienteDAOH2:55] iniciando la busqueda de un paciente por id: 3
