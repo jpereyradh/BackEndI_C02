@@ -21,6 +21,7 @@ public class PacienteDAOH2 implements iDao<Paciente> {
     private static final String SQL_SELECT_ONE = "SELECT * FROM PACIENTES WHERE ID=?";
     private static final String SQL_SELECT_ALL = "SELECT * FROM PACIENTES";
     private static final String SQL_SELECT_BY_EMAIL ="SELECT * FROM PACIENTES WHERE EMAIL=?";
+    private static final String SQL_UPDATE="UPDATE PACIENTES SET NOMBRE=?, APELLIDO=?, CEDULA=?, FECHA_INGRESO=?, DOMICILIO_ID=?, EMAIL=? WHERE ID=? ";
 
 
     @Override
@@ -80,6 +81,26 @@ public class PacienteDAOH2 implements iDao<Paciente> {
 
     @Override
     public void actualizar(Paciente paciente) {
+        logger.info("iniciando la actualizacion de : "+paciente.getNombre()+" con id : "+paciente.getId());
+        Connection connection= null;
+        DomicilioDaoH2 daoAux= new DomicilioDaoH2();
+        daoAux.actualizar(paciente.getDomicilio());
+        try{
+            connection= BD.getConnection();
+            PreparedStatement psUpdate= connection.prepareStatement(SQL_UPDATE);
+            psUpdate.setString(1,paciente.getNombre());
+            psUpdate.setString(2, paciente.getApellido());
+            psUpdate.setString(3, paciente.getCedula());
+            psUpdate.setDate(4, Date.valueOf(paciente.getFechaIngreso()));
+            psUpdate.setInt(5,paciente.getDomicilio().getId());
+            psUpdate.setString(6, paciente.getEmail());
+            psUpdate.setInt(7,paciente.getId());
+            psUpdate.execute();
+
+
+        }catch (Exception e){
+            logger.warn(e.getMessage());
+        }
 
     }
 

@@ -20,6 +20,9 @@ public class Paciente {
         this.email= email;
     }
 
+    public Paciente() {
+    }
+
     public Paciente(Integer id, String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email) {
         this.id = id;
         this.nombre = nombre;

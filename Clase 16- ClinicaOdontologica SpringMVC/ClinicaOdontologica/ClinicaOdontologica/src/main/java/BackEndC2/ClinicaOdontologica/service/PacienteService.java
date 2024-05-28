@@ -23,6 +23,9 @@ public class PacienteService {
     public List<Paciente> buscarTodos(){
         return pacienteiDao.buscarTodos();
     }
+    public void actualizarPaciente(Paciente paciente){
+        pacienteiDao.actualizar(paciente);
+    }
     public Paciente buscarPorCorreo(String correo){
         return pacienteiDao.buscarPorString(correo);
     }

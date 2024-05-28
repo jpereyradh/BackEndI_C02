@@ -1,6 +1,7 @@
 package BackEndC2.ClinicaOdontologica.dao;
 
 import BackEndC2.ClinicaOdontologica.model.Domicilio;
+import org.apache.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,6 +11,8 @@ import java.util.List;
 public class DomicilioDaoH2 implements iDao<Domicilio>{
     private static final String SQL_SELECT_ONE="SELECT * FROM DOMICILIOS WHERE ID=?";
     private static final String SQL_INSERT="INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES(?,?,?,?)";
+    private static final String SQL_UPDATE="UPDATE DOMICILIOS SET CALLE=?, NUMERO=?, LOCALIDAD=?, PROVINCIA=? WHERE ID=?";
+    private static final Logger logger= Logger.getLogger(DomicilioDaoH2.class);
     /* -----------------------
     private Integer id;
     private String calle;
@@ -18,6 +21,7 @@ public class DomicilioDaoH2 implements iDao<Domicilio>{
     private String provincia;*/
     @Override
     public Domicilio guardar(Domicilio domicilio) {
+        logger.info("iniciando la operacion de : Guardado de un domicilio");
         Connection connection=null;
 
         try{
@@ -42,6 +46,8 @@ public class DomicilioDaoH2 implements iDao<Domicilio>{
 
     @Override
     public Domicilio buscarPorID(Integer id) {
+        logger.info("iniciando la operacion de : Buscado de un domicilio");
+
         Connection connection=null;
         Domicilio domicilio= null;
         try{
@@ -61,6 +67,23 @@ public class DomicilioDaoH2 implements iDao<Domicilio>{
 
     @Override
     public void actualizar(Domicilio domicilio) {
+        logger.info("iniciando la operacion de : actualizar un domicilio");
+        Connection connection= null;
+        try{
+            connection= BD.getConnection();
+            PreparedStatement psUpdate= connection.prepareStatement(SQL_UPDATE);
+            psUpdate.setString(1, domicilio.getCalle());
+            psUpdate.setInt(2,domicilio.getNumero());
+            psUpdate.setString(3, domicilio.getLocalidad());
+            psUpdate.setString(4, domicilio.getProvincia());
+            psUpdate.setInt(5,domicilio.getId());
+            psUpdate.execute();
+
+
+        }catch (Exception e){
+            logger.warn(e.getMessage());
+        }
+
 
     }
 

@@ -19,3 +19,35 @@ Unsupported database file version or invalid file header in file "C:/Users/emato
 [2024-05-22 23:36:54] [ WARN ] [BD:33] La cantidad de columnas no coincide
 Column count does not match; SQL statement:
 INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Jorgito','Pereyra','123456','2024-05-15',1,'jorge.pereyra@digitalhouse.com'),('Claudia','Heredia','11111111','2024-05-10',2,'claudia@claudia.com'); INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre viva',742,'Springfield','USA'), ('Siempre viva',742,'Springfield','USA') [21002-214]
+[2024-05-27 21:39:28] [ INFO ] [BD:30] tabla creada con exito
+[2024-05-27 21:48:11] [ INFO ] [BD:30] tabla creada con exito
+[2024-05-27 21:49:13] [ INFO ] [BD:30] tabla creada con exito
+[2024-05-27 21:49:25] [ INFO ] [PacienteDAOH2:28] inicando la operacion de guardado
+[2024-05-27 21:49:25] [ INFO ] [PacienteDAOH2:46] paciente guardado con exito
+[2024-05-27 21:50:55] [ INFO ] [PacienteDAOH2:28] inicando la operacion de guardado
+[2024-05-27 21:50:55] [ INFO ] [PacienteDAOH2:46] paciente guardado con exito
+[2024-05-27 21:50:58] [ INFO ] [PacienteDAOH2:28] inicando la operacion de guardado
+[2024-05-27 21:50:58] [ INFO ] [PacienteDAOH2:46] paciente guardado con exito
+[2024-05-27 22:10:46] [ INFO ] [BD:30] tabla creada con exito
+[2024-05-27 22:10:59] [ INFO ] [PacienteDAOH2:29] inicando la operacion de guardado
+[2024-05-27 22:10:59] [ INFO ] [DomicilioDaoH2:24] iniciando la operacion de : Guardado de un domicilio
+[2024-05-27 22:10:59] [ INFO ] [PacienteDAOH2:47] paciente guardado con exito
+[2024-05-27 22:12:17] [ INFO ] [PacienteDAOH2:58] iniciando la busqueda de un paciente por id: null
+[2024-05-27 22:12:17] [ WARN ] [PacienteDAOH2:77] Cannot invoke "java.lang.Integer.intValue()" because "id" is null
+[2024-05-27 22:14:41] [ INFO ] [BD:30] tabla creada con exito
+[2024-05-27 22:14:58] [ INFO ] [PacienteDAOH2:29] inicando la operacion de guardado
+[2024-05-27 22:14:58] [ INFO ] [DomicilioDaoH2:24] iniciando la operacion de : Guardado de un domicilio
+[2024-05-27 22:14:58] [ INFO ] [PacienteDAOH2:47] paciente guardado con exito
+[2024-05-27 22:15:12] [ INFO ] [PacienteDAOH2:58] iniciando la busqueda de un paciente por id: 3
+[2024-05-27 22:15:12] [ INFO ] [DomicilioDaoH2:49] iniciando la operacion de : Buscado de un domicilio
+[2024-05-27 22:15:12] [ INFO ] [PacienteDAOH2:84] iniciando la actualizacion de :  Avrilcon id : 3
+[2024-05-27 22:15:12] [ INFO ] [DomicilioDaoH2:70] iniciando la operacion de : actualizar un domicilio
+[2024-05-27 22:18:02] [ WARN ] [BD:33] Versión del archivo de base de datos no soportada ó encabezado de archivo invalido en archivo "C:/Users/jorge.pereyra/C2ClinicaOdontologica.mv.db"
+Unsupported database file version or invalid file header in file "C:/Users/jorge.pereyra/C2ClinicaOdontologica.mv.db" [90048-214]
+[2024-05-27 22:18:12] [ WARN ] [BD:33] Versión del archivo de base de datos no soportada ó encabezado de archivo invalido en archivo "C:/Users/jorge.pereyra/C2ClinicaOdontologica.mv.db"
+Unsupported database file version or invalid file header in file "C:/Users/jorge.pereyra/C2ClinicaOdontologica.mv.db" [90048-214]
+[2024-05-27 22:18:33] [ INFO ] [PacienteDAOH2:29] inicando la operacion de guardado
+[2024-05-27 22:18:33] [ INFO ] [DomicilioDaoH2:24] iniciando la operacion de : Guardado de un domicilio
+[2024-05-27 22:18:33] [ WARN ] [PacienteDAOH2:51] Versión del archivo de base de datos no soportada ó encabezado de archivo invalido en archivo "C:/Users/jorge.pereyra/C2ClinicaOdontologica.mv.db"
+Unsupported database file version or invalid file header in file "C:/Users/jorge.pereyra/C2ClinicaOdontologica.mv.db" [90048-214]
+[2024-05-27 22:19:58] [ INFO ] [BD:30] tabla creada con exito
