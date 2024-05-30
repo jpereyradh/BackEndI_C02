@@ -17,8 +17,11 @@ public class BD {
     private static final String SQL_DROP_CREATE_DOMICILIOS="DROP TABLE IF EXISTS DOMICILIOS; " +
             "CREATE TABLE DOMICILIOS (ID INT AUTO_INCREMENT PRIMARY KEY, CALLE VARCHAR(100)  NOT NULL, NUMERO INT NOT NULL, LOCALIDAD VARCHAR(100)  NOT NULL, " +
             "PROVINCIA VARCHAR(100)  NOT NULL)";
+    private static final String SQL_DROP_CREATE_ODONTOLOGOS="DROP TABLE IF EXISTS ODONTOLOGOS; " +
+            "CREATE TABLE ODONTOLOGOS (ID INT AUTO_INCREMENT PRIMARY KEY, MATRICULA VARCHAR(100) NOT NULL, NOMBRE VARCHAR(100) NOT NULL, APELLIDO VARCHAR(100) NOT NULL)";
     private static final String SQL_PRUEBA="INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES('Jorgito','Pereyra','123456','2024-05-15',1,'jorge.pereyra@digitalhouse.com'),('Claudia','Heredia','11111111','2024-05-10',2,'claudia@claudia.com'); " +
-            "INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre viva',742,'Springfield','USA'), ('Siempre viva',742,'Springfield','USA')";
+            "INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre viva',742,'Springfield','USA'), ('Siempre viva',742,'Springfield','USA'); " +
+            "INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES ('ABC10','CAROL','VELEZ'),('ABC20','ADRIANA','ROMERO')";
 
     public static void crearTablas(){
         Connection connection= null;
@@ -27,6 +30,7 @@ public class BD {
             Statement statement= connection.createStatement();
             statement.execute(SQL_DROP_CREATE_PACIENTES);
             statement.execute(SQL_DROP_CREATE_DOMICILIOS);
+            statement.execute(SQL_DROP_CREATE_ODONTOLOGOS);
             statement.execute(SQL_PRUEBA);
             logger.info("tabla creada con exito");
 

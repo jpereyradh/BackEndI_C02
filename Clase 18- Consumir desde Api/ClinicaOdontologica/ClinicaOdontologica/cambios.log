@@ -170,3 +170,23 @@ Unsupported database file version or invalid file header in file "C:/Users/jorge
 [2024-05-28 01:02:34] [ INFO ] [PacienteDAOH2:59] iniciando la busqueda de un paciente por id: 2
 [2024-05-28 01:02:34] [ INFO ] [DomicilioDaoH2:50] iniciando la operacion de : Buscado de un domicilio
 [2024-05-28 01:02:38] [ INFO ] [PacienteDAOH2:59] iniciando la busqueda de un paciente por id: 5
+[2024-05-29 22:02:54] [ WARN ] [BD:38] Error de Sintaxis en sentencia SQL "CREATE TABLE ODONTOLOGOS (ID INT AUTO_INCREMENT [*]PRIMARY, MATRICULA VARCHAR(100) NOT NULL, NOMBRE VARCHAR(100) NOT NULL, APELLIDO VARCHAR(100) NOT NULL)"; se esperaba "(, NOT NULL, NULL, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE ODONTOLOGOS (ID INT AUTO_INCREMENT [*]PRIMARY, MATRICULA VARCHAR(100) NOT NULL, NOMBRE VARCHAR(100) NOT NULL, APELLIDO VARCHAR(100) NOT NULL)"; expected "(, NOT NULL, NULL, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE ODONTOLOGOS (ID INT AUTO_INCREMENT PRIMARY, MATRICULA VARCHAR(100) NOT NULL, NOMBRE VARCHAR(100) NOT NULL, APELLIDO VARCHAR(100) NOT NULL) [42001-214]
+[2024-05-29 22:04:13] [ INFO ] [BD:35] tabla creada con exito
+[2024-05-29 22:04:44] [ INFO ] [PacienteDAOH2:24] inicando la operacion de guardado
+[2024-05-29 22:04:44] [ INFO ] [DomicilioDaoH2:25] iniciando la operacion de : Guardado de un domicilio
+[2024-05-29 22:04:45] [ INFO ] [PacienteDAOH2:42] paciente guardado con exito
+[2024-05-29 22:06:11] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : Guardado de :Fabian
+[2024-05-29 22:10:44] [ INFO ] [BD:35] tabla creada con exito
+[2024-05-29 22:10:57] [ INFO ] [PacienteDAOH2:59] iniciando la busqueda de un paciente por id: 3
+[2024-05-29 22:11:23] [ INFO ] [PacienteDAOH2:24] inicando la operacion de guardado
+[2024-05-29 22:11:23] [ INFO ] [DomicilioDaoH2:25] iniciando la operacion de : Guardado de un domicilio
+[2024-05-29 22:11:23] [ INFO ] [PacienteDAOH2:42] paciente guardado con exito
+[2024-05-29 22:11:27] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : Guardado de :Fabian
+[2024-05-29 22:11:33] [ INFO ] [PacienteDAOH2:59] iniciando la busqueda de un paciente por id: 3
+[2024-05-29 22:11:33] [ INFO ] [DomicilioDaoH2:50] iniciando la operacion de : Buscado de un domicilio
+[2024-05-29 22:11:33] [ INFO ] [OdontologoDAOH2:41] iniciando las operaciones de : busqueda De un Odontologo con id:  3
+[2024-05-29 22:11:33] [ INFO ] [PacienteDAOH2:59] iniciando la busqueda de un paciente por id: 3
+[2024-05-29 22:11:33] [ INFO ] [DomicilioDaoH2:50] iniciando la operacion de : Buscado de un domicilio
+[2024-05-29 22:11:33] [ INFO ] [OdontologoDAOH2:41] iniciando las operaciones de : busqueda De un Odontologo con id:  3
