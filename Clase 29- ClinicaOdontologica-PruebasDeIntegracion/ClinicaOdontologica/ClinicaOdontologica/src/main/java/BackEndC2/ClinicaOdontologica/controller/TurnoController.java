@@ -1,5 +1,6 @@
 package BackEndC2.ClinicaOdontologica.controller;
 
+import BackEndC2.ClinicaOdontologica.dto.TurnoDTO;
 import BackEndC2.ClinicaOdontologica.entity.Odontologo;
 import BackEndC2.ClinicaOdontologica.entity.Paciente;
 import BackEndC2.ClinicaOdontologica.entity.Turno;
@@ -25,7 +26,7 @@ public class TurnoController {
 
 
   @PostMapping
-    public ResponseEntity<Turno> guardarTurno(@RequestBody Turno turno){
+    public ResponseEntity<TurnoDTO> guardarTurno(@RequestBody Turno turno){
 
       Optional<Paciente> pacienteBuscado= pacienteService.buscarPorID(turno.getPaciente().getId());
       Optional<Odontologo> odontologoBuscado= odontologoService.buscarPorID(turno.getOdontologo().getId());
@@ -40,7 +41,16 @@ public class TurnoController {
       }
           }
     @GetMapping
-    public ResponseEntity<List<Turno>> listarTodosLosTurnos(){
+    public ResponseEntity<List<TurnoDTO>> listarTodosLosTurnos(){
         return ResponseEntity.ok(turnoService.listarTodos());
+    }
+    @GetMapping("/{id}")
+    public ResponseEntity<TurnoDTO> buscarPorId(@PathVariable Long id){
+      Optional<TurnoDTO> turnoBuscado= turnoService.buscarTurnoId(id);
+      if(turnoBuscado.isPresent()){
+          return ResponseEntity.ok(turnoBuscado.get());
+      }else{
+          return ResponseEntity.notFound().build();
+      }
     }
 }
